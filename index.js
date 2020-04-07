@@ -36,7 +36,7 @@ server.post('/api/users', (req, res) => {
     userArray.push(userBody);
 
     res.status(201).json(userArray);
-}) 
+});
 
 const port = 5000; // the server is running on http://localhost:5000
 server.listen(port, () => console.log(`\n== api on port ${port} ==\n`));
